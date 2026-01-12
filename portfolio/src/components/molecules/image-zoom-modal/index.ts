@@ -1,0 +1,2 @@
+export { ImageZoomModal } from './ImageZoomModal'
+

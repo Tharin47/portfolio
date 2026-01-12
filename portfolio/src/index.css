@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
 
 :root {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -12,8 +14,66 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Light Theme (Default) */
+:root,
+[data-theme='light'] {
+  /* Background Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-tertiary: #f3f4f6;
+  --color-bg-quaternary: #e5e7eb;
+
+  /* Border Colors */
+  --color-border-primary: #d1d5db;
+  --color-border-secondary: #9ca3af;
+  --color-border-tertiary: #6b7280;
+
+  /* Text Colors */
+  --color-text-primary: #111827;
+  --color-text-secondary: #374151;
+  --color-text-tertiary: #4b5563;
+  --color-text-muted: #6b7280;
+
+  /* Purple Colors */
+  --color-purple-primary: #6e06ff;
+  --color-purple-secondary: #a57cff;
+  --color-purple-tertiary: #6e06ff;
+  --color-purple-hover: #8701fc;
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+  /* Background Colors */
+  --color-bg-primary: #151520;
+  --color-bg-secondary: #1f1f2a;
+  --color-bg-tertiary: #252530;
+  --color-bg-quaternary: #353540;
+
+  /* Border Colors */
+  --color-border-primary: #374151;
+  --color-border-secondary: #4b5563;
+  --color-border-tertiary: #6b7280;
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e5e7eb;
+  --color-text-tertiary: #d1d5db;
+  --color-text-muted: #9ca3af;
+
+  /* Purple Colors */
+  --color-purple-primary: #6e06ff;
+  --color-purple-secondary: #a57cff;
+  --color-purple-tertiary: #6e06ff;
+  --color-purple-hover: #8701fc;
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -21,16 +81,72 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #0a0a0f;
-  color: #ffffff;
+  width: 100%;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
 #root {
   min-height: 100vh;
   width: 100%;
-  background-color: #0a0a0f;
+  background-color: var(--color-bg-primary);
 }
 
 .font-serif {
   font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Swiper overflow fix for gallery carousel */
+.swiper-wrapper {
+  overflow: visible !important;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  overflow: visible !important;
+}
+
+/* Swiper pagination positioning - hide default */
+.swiper-pagination {
+  display: none !important;
+}
+
+/* Custom pagination styling - positioned below carousel */
+.swiper-pagination-custom {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  margin-top: 1.5rem !important;
+  position: relative !important;
+  bottom: auto !important;
+  top: auto !important;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-custom,
+.swiper-pagination-bullet-custom {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  background-color: var(--color-border-primary) !important;
+  opacity: 1 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  margin: 0 !important;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active-custom,
+.swiper-pagination-bullet-active-custom {
+  width: 1.5rem !important;
+  height: 0.5rem !important;
+  border-radius: 0.25rem !important;
+  -webkit-border-radius: 0.25rem !important;
+  -moz-border-radius: 0.25rem !important;
+  background-color: var(--color-purple-primary) !important;
 }

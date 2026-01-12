@@ -12,13 +12,13 @@ const Home = (): ReactElement => {
     "I'm a UX designer. I'm passionate about creating usable digital products. I have worked with incredibly talented people across different companies."
 
   return (
-    <main className="min-h-screen bg-[#0a0a0f]">
+    <main className="min-h-screen bg-[var(--color-bg-primary)]">
       <Hero
         name={name}
         role={role}
         valueProposition={valueProposition}
       />
-      <div className="bg-[#0a0a0f]">
+      <div className="bg-[var(--color-bg-primary)]">
         <FeaturedCaseStudies caseStudies={DEFAULT_CASE_STUDIES} />
         <SkillsSnapshot skills={DEFAULT_SKILLS} />
         <CTA

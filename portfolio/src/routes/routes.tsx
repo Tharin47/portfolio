@@ -4,6 +4,7 @@ import { Home } from '@/pages/home'
 import { About } from '@/pages/about'
 import { Resume } from '@/pages/resume'
 import { Contact } from '@/pages/contact'
+import { CaseStudy } from '@/pages/case-study'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />,
+      },
+      {
+        path: 'case-study/:id',
+        element: <CaseStudy />,
       },
     ],
   },

@@ -1,31 +1,16 @@
 import type { CaseStudy, Skill } from '@/types/home.types'
+import caseStudiesData from '@/data/case-studies.json'
 
-export const DEFAULT_CASE_STUDIES: CaseStudy[] = [
-  {
-    id: '1',
-    title: 'StreetBite - Street food. Zero wait.',
-    description:
-      'A Minimalist Real-Time App for Discovering and Pre-Booking Street Food',
-    tags: ['Mobile App', 'UX Design', 'Real-Time'],
-    link: '#',
-  },
-  {
-    id: '2',
-    title: 'Redesigning Wristband Monkey\'s Online Experience',
-    description:
-      'Transforming a cluttered wristband store into a simple, visual-first experience for teachers, students, and fundraisers.',
-    tags: ['Web Design', 'E-Commerce', 'UX Research'],
-    link: '#',
-  },
-  {
-    id: '3',
-    title: 'SaaS Dashboard',
-    description:
-      'Comprehensive dashboard design for a SaaS platform with data visualization and analytics.',
-    tags: ['Dashboard Design', 'Data Viz', 'React'],
-    link: '#',
-  },
-]
+export const DEFAULT_CASE_STUDIES: CaseStudy[] = caseStudiesData.caseStudies.map(
+  (cs) => ({
+    id: cs.id,
+    title: cs.title,
+    description: cs.description,
+    image: cs.image,
+    tags: cs.tags,
+    link: cs.link,
+  })
+)
 
 export const DEFAULT_SKILLS: Skill[] = [
   { name: 'React', category: 'Frontend' },

@@ -17,11 +17,11 @@ const Button = ({
 
   const variantClasses = {
     primary:
-      'bg-purple-600 text-white hover:bg-purple-700 focus:ring-purple-500',
+      'bg-[var(--color-purple-tertiary)] text-[var(--color-text-primary)] hover:bg-[var(--color-purple-hover)] focus:ring-[var(--color-purple-tertiary)]',
     secondary:
-      'bg-[#1a1a24] border-2 border-purple-600 text-white hover:bg-purple-600 hover:text-white hover:border-purple-600 focus:ring-purple-500',
+      'bg-[var(--color-bg-tertiary)] border-2 border-[var(--color-purple-tertiary)] text-[var(--color-text-primary)] hover:bg-[var(--color-purple-tertiary)] hover:text-[var(--color-text-primary)] hover:border-[var(--color-purple-tertiary)] focus:ring-[var(--color-purple-tertiary)]',
     outline:
-      'border-2 border-gray-600 text-gray-300 hover:bg-purple-600 hover:text-white hover:border-purple-600 focus:ring-purple-500',
+      'border-2 border-[var(--color-border-primary)] text-[var(--color-text-tertiary)] hover:bg-[var(--color-purple-tertiary)] hover:text-[var(--color-text-primary)] hover:border-[var(--color-purple-tertiary)] focus:ring-[var(--color-purple-tertiary)]',
   }
 
   const sizeClasses = {

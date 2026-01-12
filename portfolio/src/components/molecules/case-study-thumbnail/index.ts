@@ -1,0 +1,2 @@
+export { CaseStudyThumbnail } from './CaseStudyThumbnail'
+

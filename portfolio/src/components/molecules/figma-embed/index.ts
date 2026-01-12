@@ -1,0 +1,2 @@
+export { FigmaEmbed } from './FigmaEmbed'
+

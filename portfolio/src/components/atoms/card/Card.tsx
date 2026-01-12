@@ -11,7 +11,7 @@ const Card = ({
   onClick,
 }: CardProps): ReactElement => {
   const baseClasses =
-    'bg-[#1a1a24] border border-gray-800 rounded-lg overflow-hidden transition-all duration-200 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20'
+    'bg-[var(--color-bg-tertiary)] border border-[var(--color-border-secondary)] rounded-lg overflow-hidden transition-all duration-200 hover:border-[var(--color-purple-tertiary)] hover:shadow-lg hover:shadow-[var(--color-purple-tertiary)]/20'
 
   const clickableClasses = onClick ? 'cursor-pointer' : ''
 
@@ -33,7 +33,7 @@ const Card = ({
       }
     >
       {image && (
-        <div className="w-full h-48 overflow-hidden bg-[#2a2a34]">
+        <div className="w-full h-48 overflow-hidden bg-[var(--color-bg-quaternary)]">
           <img
             src={image}
             alt={imageAlt || title || 'Card image'}
@@ -44,12 +44,12 @@ const Card = ({
       {(title || description || children) && (
         <div className="p-4 sm:p-6">
           {title && (
-            <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 text-[var(--color-text-primary)]">
               {title}
             </h3>
           )}
           {description && (
-            <p className="text-sm sm:text-base text-gray-300 mb-4">
+            <p className="text-sm sm:text-base text-[var(--color-text-tertiary)] mb-4">
               {description}
             </p>
           )}
