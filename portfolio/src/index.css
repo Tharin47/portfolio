@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "swiper/css";
 @import "swiper/css/pagination";
+@import "swiper/css/navigation";
 
 :root {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -94,6 +95,30 @@ body {
 
 .font-serif {
   font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/* Swiper Navigation Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-text-primary) !important;
+  background-color: var(--color-bg-primary);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--color-bg-secondary);
+  transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important;
+  font-weight: bold;
 }
 
 /* Swiper overflow fix for gallery carousel */

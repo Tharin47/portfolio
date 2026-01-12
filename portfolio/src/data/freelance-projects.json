@@ -1,0 +1,55 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Amara - E-commerce Custom Jewelry Platform",
+      "description": "Empower users to build meaningful, one-of-a-kind rings by selecting a gemstone first and designing the rest around it.",
+      "gallery": [
+        "amara/Home.png",
+        "amara/Shop.png",
+        "amara/Single Product.png",
+        "amara/Ring Selection Page.png",
+        "amara/Ring Selection Page Gem.png",
+        "amara/Ring Customization Page.png",
+        "amara/Ring Customization Page - gem.png"
+      ],
+      "figmaPrototype": {
+        "url": "https://embed.figma.com/proto/OnYxIIOeiqV5XvaB7R7ghC/Amara?node-id=2004-2&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2004%3A2&embed-host=share",
+        "title": "Interactive Prototype",
+        "width": "800",
+        "height": "450"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Project Title 2",
+      "description": "Project description goes here. This is a placeholder for another freelance project.",
+      "gallery": [
+        "/mockup1.png",
+        "/mockup2.png"
+      ],
+      "figmaPrototype": {
+        "url": "https://www.figma.com/proto/example",
+        "title": "Interactive Prototype"
+      }
+    },
+    {
+      "id": "3",
+      "title": "SaaS Dashboard",
+      "description": "Comprehensive dashboard design for a SaaS platform with data visualization and analytics.",
+      "gallery": [
+        "/mockup1.png",
+        "/mockup2.png",
+        "/mockup3.png",
+        "/mockup4.png",
+        "/mockup5.png",
+        "/mockup6.png"
+      ],
+      "figmaPrototype": {
+        "url": "https://www.figma.com/proto/example",
+        "title": "Interactive Prototype"
+      }
+    }
+  ]
+}
+

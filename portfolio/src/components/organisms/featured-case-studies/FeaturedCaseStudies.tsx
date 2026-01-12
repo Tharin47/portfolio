@@ -140,7 +140,7 @@ const CaseStudyItem = ({ caseStudy, index }: CaseStudyItemProps): ReactElement =
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <Button
-                label="View Case Study"
+                label={caseStudy.link === '/other-projects' ? 'View Projects' : 'View Case Study'}
                 to={caseStudy.link}
                 variant="outline"
                 size="md"

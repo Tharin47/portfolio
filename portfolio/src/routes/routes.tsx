@@ -5,6 +5,7 @@ import { About } from '@/pages/about'
 import { Resume } from '@/pages/resume'
 import { Contact } from '@/pages/contact'
 import { CaseStudy } from '@/pages/case-study'
+import { FreelanceProjects } from '@/pages/freelance-projects'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: 'case-study/:id',
         element: <CaseStudy />,
+      },
+      {
+        path: 'other-projects',
+        element: <FreelanceProjects />,
       },
     ],
   },

@@ -783,40 +783,6 @@
         "/mockup6.png"
       ],
       "sections": []
-    },
-    {
-      "id": "3",
-      "title": "SaaS Dashboard",
-      "description": "Comprehensive dashboard design for a SaaS platform with data visualization and analytics.",
-      "tags": ["Dashboard Design", "Data Viz", "React"],
-      "image": "/mockup1.png",
-      "link": "/case-study/3",
-      "hero": {
-        "outcome": "Comprehensive dashboard design for a SaaS platform with data visualization and analytics.",
-        "platform": "Web",
-        "role": "UI/UX Designer & Frontend Developer",
-        "duration": "5 months",
-        "tools": ["Figma", "React", "TypeScript", "D3.js", "Chart.js"],
-        "heroImage": "/mockup1.png"
-      },
-      "mockups": [
-        "/mockup1.png",
-        "/mockup2.png",
-        "/mockup3.png",
-        "/mockup4.png",
-        "/mockup5.png",
-        "/mockup6.png"
-      ],
-      "sections": [
-        {
-          "heading": "A. Design & Development",
-          "content": "Designed and developed a comprehensive SaaS dashboard that provides users with actionable insights through intuitive data visualization. Worked closely with product managers and data scientists to ensure the dashboard effectively communicates complex metrics."
-        },
-        {
-          "heading": "B. Design & Development",
-          "content": "Created a scalable design system that supports multiple data visualization types. Implemented responsive layouts and interactive charts that allow users to drill down into specific metrics, improving decision-making capabilities."
-        }
-      ]
     }
   ]
 }

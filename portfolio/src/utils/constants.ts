@@ -1,16 +1,17 @@
 import type { CaseStudy, Skill } from '@/types/home.types'
 import caseStudiesData from '@/data/case-studies.json'
 
-export const DEFAULT_CASE_STUDIES: CaseStudy[] = caseStudiesData.caseStudies.map(
-  (cs) => ({
+// Filter out the SaaS project (id: "3") as it's now a freelance project
+export const DEFAULT_CASE_STUDIES: CaseStudy[] = caseStudiesData.caseStudies
+  .filter((cs) => cs.id !== '3')
+  .map((cs) => ({
     id: cs.id,
     title: cs.title,
     description: cs.description,
     image: cs.image,
     tags: cs.tags,
     link: cs.link,
-  })
-)
+  }))
 
 export const DEFAULT_SKILLS: Skill[] = [
   { name: 'React', category: 'Frontend' },
